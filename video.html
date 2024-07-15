@@ -1,119 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Inspired Design</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-        }
-        .navbar {
-            background-color: #ff0000;
-            padding: 10px;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .navbar h1 {
-            margin: 0;
-            font-size: 24px;
-        }
-        .navbar input {
-            width: 300px;
-            padding: 5px;
-        }
-        .sidebar {
-            width: 200px;
-            background-color: #ffffff;
-            position: fixed;
-            top: 50px;
-            bottom: 0;
-            left: 0;
-            padding-top: 20px;
-            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-        }
-        .sidebar a {
-            display: block;
-            padding: 10px;
-            color: #333;
-            text-decoration: none;
-            margin: 5px 0;
-        }
-        .sidebar a:hover {
-            background-color: #f1f1f1;
-        }
-        .main-content {
-            margin-left: 220px;
-            padding: 20px;
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .video-thumbnail {
-            width: 200px;
-            margin: 10px;
-            background-color: white;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            border-radius: 4px;
-            overflow: hidden;
-        }
-        .video-thumbnail img {
-            width: 100%;
-        }
-        .video-thumbnail .info {
-            padding: 10px;
-        }
-        .footer {
-            background-color: #202020;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+   <link href="https://vjs.zencdn.net/7.19.2/video-js.css"rel="stylesheet" />
 </head>
 <body>
+   <h4>Sheetmusic No. 1 Simply Jessie</h4>
+   <video id="my-video-player" controls class="video-js" datasetup='{}'>
+      <source src="https://chocolate-cooperative-herring-689.mypinata.cloud/ipfs/QmPKm2v7LbWmJ5FbkLTXJdvk3zDixJHf7t4JQQJixLcRfV" type="video/mp4" />
+   </video>
+   <h4>Sheetmusic No. 2 Dance With My Father</h4>
+   <video id="my-video-player" controls class="video-js" datasetup='{}'>
+      <source src="https://chocolate-cooperative-herring-689.mypinata.cloud/ipfs/QmcXaCpFmuT271xfFtb4YWcypKovUobK2igk1NKncEnTJV" type="video/mp4" />
+   </video>
+   <h4>Sheetmusic No. 22  Save The Last Dance For Me</h4>
+   <video id="my-video-player" controls class="video-js" datasetup='{}'>
+      <source src="https://chocolate-cooperative-herring-689.mypinata.cloud/ipfs/QmVSTWFeS8AjrM1GHkwhT3QyethpHX5suaWYUx8otbokBG" type="video/mp4" />
+   </video>
 
-    <div class="navbar">
-        <h1>YouTube</h1>
-        <input type="text" placeholder="Search">
-    </div>
+   <h4>bitcoin banner</h4>
+   <video id="my-video-player" controls class="video-js" datasetup='{}'>
+      <source src="https://chocolate-cooperative-herring-689.mypinata.cloud/ipfs/Qmdqh2DagGRfuFY6i7F7nBZju7kjKPz4evuadFFxoKJfvU" type="video/mp4" />
+   </video>
 
-    <div class="sidebar">
-        <a href="/">Home</a>
-        <a href="#">Trending</a>
-        <a href="#">Subscriptions</a>
-        <a href="#">Library</a>
-    </div>
+   <h4>balatero banner</h4>
+   <video id="my-video-player" controls class="video-js" datasetup='{}'>
+      <source src="https://chocolate-cooperative-herring-689.mypinata.cloud/ipfs/QmQAKHmhg2RFmGo35KNP39e9vTY81ejxE1T3mfihRTxFET" type="video/mp4" />
+   </video>
 
-    <div class="main-content">
-        <div class="video-thumbnail">
-            <img src="https://via.placeholder.com/200" alt="Video Thumbnail">
-            <div class="info">
-                <h3>Video Title</h3>
-                <p>Channel Name</p>
-                <p>Views • Time ago</p>
-            </div>
-        </div>
-        <div class="video-thumbnail">
-            <img src="https://via.placeholder.com/200" alt="Video Thumbnail">
-            <div class="info">
-                <h3>Video Title</h3>
-                <p>Channel Name</p>
-                <p>Views • Time ago</p>
-            </div>
-        </div>
-        <!-- Add more video thumbnails as needed -->
-    </div>
 
-    <div class="footer">
-        <p>© 2024 YouTube Inspired Design</p>
-    </div>
+  
 
+   <script src="https://vjs.zencdn.net/7.19.2/video.min.js">
+      const player = videojs(document.querySelector('.video-js'));
+   </script>
 </body>
 </html>
