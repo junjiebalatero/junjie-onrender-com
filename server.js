@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-const port = 3000; // You can use any port you prefer
+const port = 5500; // You can use any port you prefer
 
 // Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
@@ -18,6 +18,10 @@ app.get('/images', (req, res) => {
 
 app.get('/video', (req, res) => {
   res.sendFile(path.join(__dirname, 'video.html'));
+});
+
+app.get('/megavision', (req, res) => {
+  res.sendFile(path.join(__dirname, 'megavision.html'));
 });
 
 // Start the server
